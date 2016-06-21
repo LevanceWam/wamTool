@@ -1,8 +1,4 @@
 node_modules
 .DS_Store
-*.log
-*.logs
-.env
-.env.json
-out
-build
+/log
+npm-debug.log
