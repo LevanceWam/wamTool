@@ -1,7 +1,21 @@
 exports.debug = (title, obj) => {
   const seperator = '\n====================\n';
-  const output = seperator + title + seperator;
+  const ts = new Date();
+  const colors = require('colors');
+  colors.setTheme({
+    info: 'blue',
+    warn: 'yellow',
+    debug: 'red',
+    error: 'green',
+    input: 'orange',
+    object: 'cyan',
+  });
+  const output = seperator.input + ' ' + title.info + ' ' + obj.info + ' ' + ts.info + ' ' + seperator;
+  const fs = require('fs');
   if (process.env.DEBUG) {
-    console.log(output, obj);
+    fs.appendFile('logs/util.logs', output, (err) => {
+      if (err) throw err;
+      console.log(output);
+    });
   }
 };
