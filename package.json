@@ -2,7 +2,7 @@
   "name": "wamTool",
   "version": "1.0.7",
   "description": "My testing tool",
-  "main": "util.js",
+  "main": "src/util.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
