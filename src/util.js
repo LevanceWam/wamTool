@@ -5,12 +5,12 @@ exports.debug = (title, obj) => {
   colors.setTheme({
     info: 'blue',
     warn: 'yellow',
-    debug: 'green',
+    debug: 'magenta',
     error: 'red',
-    input: 'orange',
-    object: 'cyan',
+    data: 'white',
+    help: 'cyan',
   });
-  const output = colors.debug(seperator) + ' ' + colors.info(title) + ' ' + obj + ' ' + ts.info + ' ' + seperator;
+  const output = colors.debug(seperator) + ' ' + colors.info(title) + ' ' + colors.help(obj) + ' ' + colors.warn(ts) + ' ' + colors.debug(seperator);
   const fs = require('fs');
   if (process.env.DEBUG) {
     fs.appendFile('logs/util.logs', output, (err) => {
