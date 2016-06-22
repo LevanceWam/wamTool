@@ -1,6 +1,6 @@
 {
   "name": "wamTool",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "My testing tool",
   "main": "src/util.js",
   "scripts": {
