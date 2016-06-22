@@ -10,7 +10,7 @@ exports.debug = (title, obj) => {
     input: 'orange',
     object: 'cyan',
   });
-  const output = colors.debug(seperator) + ' ' + colors.info(title) + ' ' + colors.input(obj) + ' ' + ts.info + ' ' + seperator;
+  const output = colors.debug(seperator) + ' ' + colors.info(title) + ' ' + obj + ' ' + ts.info + ' ' + seperator;
   const fs = require('fs');
   if (process.env.DEBUG) {
     fs.appendFile('logs/util.logs', output, (err) => {
