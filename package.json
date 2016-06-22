@@ -1,6 +1,6 @@
 {
   "name": "wamTool",
-  "version": "1.6.1",
+  "version": "1.7.0",
   "description": "My testing tool",
   "main": "util.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "author": "Levamce wamley",
   "license": "ISC",
-
-"devDependencies": {
+  "devDependencies": {
     "chai": "3.5.0",
+    "colors": "^1.1.2",
     "dotenv": "2.0.0",
     "eslint": "2.11.1",
     "eslint-config-airbnb": "9.0.1",
