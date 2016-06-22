@@ -8,8 +8,9 @@ exports.debug = (title, obj) => {
     debug: 'red',
     error: 'green',
     input: 'orange',
+    object: 'cyan',
   });
-  const output = seperator + ' ' + title + ' ' + obj + ' ' + ts + ' ' + seperator;
+  const output = seperator.input + ' ' + title.info + ' ' + obj.object + ' ' + ts.info + ' ' + seperator;
   const fs = require('fs');
   if (process.env.DEBUG) {
     fs.appendFile('logs/util.logs', output, (err) => {
