@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 const pkgj = require('../package.json');
 exports.debug = (title, obj) => {
   const seperator = '\n====<(°_°<)===(^°_°^)===(>°_°)>====\n';
-=======
-exports.debug = (title, obj, status) => {
-  const seperator = '\n====================\n';
->>>>>>> 2db24067b9b557d23ea3405330a93934003b8225
   const ts = new Date();
   const colors = require('colors');
   colors.setTheme({
@@ -20,11 +15,7 @@ exports.debug = (title, obj, status) => {
   const output2 = colors.info(obj) + ' ' + colors.debug(time) + ' ' + colors.debug(status);
   const fs = require('fs');
   if (process.env.DEBUG) {
-<<<<<<< HEAD
-    console.log(output);
-=======
     console.log(output + output2);
->>>>>>> 2db24067b9b557d23ea3405330a93934003b8225
   }
 };
 
