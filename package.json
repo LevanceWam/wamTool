@@ -1,0 +1,22 @@
+{
+  "name": "apps_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LevanceWam/appsStore.git"
+  },
+  "author": "Levance Wamley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LevanceWam/appsStore/issues"
+  },
+  "homepage": "https://github.com/LevanceWam/appsStore#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
